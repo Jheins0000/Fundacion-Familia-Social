@@ -46,7 +46,7 @@ async function preguntarAGemini(pregunta, historial) {
   while (mensajes.length && mensajes[0].role !== 'user') mensajes.shift()
   if (!mensajes.length) mensajes = [{ role: 'user', parts: [{ text: pregunta }] }]
 
-  const modelo = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+  const modelo = process.env.GEMINI_MODEL || 'gemini-3.1-flash-lite'
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`
 
   const respuesta = await fetch(url, {

@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // entre barras. Si tu repo se llama distinto, cámbialo aquí.
 export default defineConfig({
   plugins: [react()],
-  base: '/fundacion-familia-social/',
+  base: '/Fundacion-Familia-Social/',
 })
